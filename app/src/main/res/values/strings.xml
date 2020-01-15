@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KidCanNote</string>
+    <string name="topic">เรื่อง</string>
+    <string name="content">ข้อความ</string>
+    <string name="OK">ตกลง</string>
+    <string name="sound">ฟังเสียง</string>
+    <string name="see">ความหมาย</string>
+    <string name="save">บันทึก</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

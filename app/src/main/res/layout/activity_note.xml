@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Note">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/back" />
+        <!--        <TextView-->
+        <!--            android:layout_width="300dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="    Note"-->
+        <!--            android:textSize="30sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/white" />-->
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="310dp"
+            android:text="@string/save"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+    <EditText
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/topic"
+        android:textSize="24sp"
+        android:background="@null"/>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="75dp"
+        android:hint="@string/content"
+        android:textSize="18sp"
+        android:background="@null"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/edit"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="6dp"
+        android:id="@+id/fab1"/>
+    </RelativeLayout>
+</RelativeLayout>

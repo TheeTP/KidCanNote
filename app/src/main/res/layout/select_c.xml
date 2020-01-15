@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectC">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imgBlack"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="310dp"
+            android:text="@string/save"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/frag1"
+        android:background="@color/orange">
+        <ImageButton
+            android:id="@+id/color"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/color"
+            android:layout_marginStart="10dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/color"
+            android:background="@drawable/emo"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frag1"
+        tools:layout="@layout/frag_select"
+        android:name="com.kidcannote.FragSelect"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar1"
+        android:layout_above="@+id/bar">
+        <ImageView
+            android:id="@+id/ImgC"
+            android:layout_width="282dp"
+            android:layout_height="195dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
