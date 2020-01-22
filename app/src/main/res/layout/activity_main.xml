@@ -24,14 +24,17 @@
             android:textColor="@color/gray"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnWidth="100dp"
-        android:numColumns="auto_fit"
-        android:gravity="center"
-        android:layout_below="@+id/toolbar"/>
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="100dp"
+            android:numColumns="2"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:verticalSpacing="20dp"
+            android:layout_below="@+id/toolbar"/>
+
 
     <com.github.clans.fab.FloatingActionButton
         android:layout_width="match_parent"

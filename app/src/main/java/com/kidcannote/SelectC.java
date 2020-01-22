@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SelectC extends AppCompatActivity {
 
@@ -24,6 +25,14 @@ public class SelectC extends AppCompatActivity {
             public void onClick(View v) {
                 Intent Img = new Intent(SelectC.this,Note.class);
                 startActivity(Img);
+            }
+        });
+        TextView textView = findViewById(R.id.txtSave);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView = new Intent(SelectC.this,MainActivity.class);
+                startActivity(textView);
             }
         });
     }
